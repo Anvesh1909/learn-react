@@ -4,9 +4,11 @@ import ListItem from './ListItem'
 
 function ListItems() {
 
+    // using list print directly
     const items = ['Anvesh', 'Bunny' ]
     const item = items.map(name => <p>{name}</p>)
 
+    // print dictionary items 
     const persons = [
         {
           id: 1,
@@ -33,9 +35,13 @@ function ListItems() {
       </p>
       )
 
+        //dictionary items with function
       const personsList2 = persons.map(person =>
         <ListItem key={person.id} person={person} />
       )
+
+    //   adding key as index
+      const nameList = items.map((item, index) =><p key={index} >{index+1}. {item}</p>)
 
 
 
@@ -54,6 +60,10 @@ function ListItems() {
 
         (using funciton )
         {personsList2}
+
+        
+        (using key in items)
+        {nameList}
     </div>
   )
 }

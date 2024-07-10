@@ -30,8 +30,16 @@ import Conditioning from './components/conditioning';
 
 import ListItems from './components/ListItems';
 
+import Styling from './components/StylingCss';
+
+import InlineCss from './components/InlineCss';
+
+import Form from './components/forms/Form';
+
 function App() {
+
   return (
+    
     <div className="App">
       <Hello name= 'Anvesh'/>
       {/* <Anvesh_NavBar />  */}
@@ -78,8 +86,22 @@ function App() {
 
       <ListItems></ListItems>
       <hr />
+
+      <Styling primary={false} ></Styling>
+      <Styling primary={true} ></Styling>
+      <hr />
+
+      <InlineCss></InlineCss>
+      <hr />
+
+      <Form></Form>
+      <hr />
+
+      
       <br/><br/><br/><br/>
+      
     </div>
+
   );
 }
 
