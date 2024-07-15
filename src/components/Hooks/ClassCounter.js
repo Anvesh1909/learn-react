@@ -14,7 +14,11 @@ import HookIntervelCounter from './useEffect/HookIntervelCounter'
 import FetchUseEffect from './HTTP/FetchUseEffect'
 import FetchAll from './HTTP/FetchAll'
 import FetchUseEffectButtonClick from './HTTP/FetchUseEffectButtonClick'
+import ComponentA from './context/ComponentA'
 // import ClassMouse from './ClassMouse'
+
+import Counter1 from './useReducer/Conter1'
+import Counter2 from './useReducer/Conter2'
 
 export class ClassCounter extends Component {
 
@@ -73,6 +77,14 @@ export class ClassCounter extends Component {
         <hr></hr>
         <FetchUseEffectButtonClick></FetchUseEffectButtonClick>
 
+        <hr></hr>
+        <ComponentA></ComponentA>
+
+        <hr></hr>
+
+        <Counter1></Counter1>
+        <hr></hr>
+        <Counter2></Counter2>
       </div>
     )
   }
