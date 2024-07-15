@@ -3,38 +3,28 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-
-import Hello from "./components/helloworld";
-// import Anvesh_NavBar from './components/Anvesh_NavBar';
-import AlertComponent from './components/AlertComponent';
-
-import ClassComponent from './components/ClassComponent';
-
-import Greet from './components/funcomponents';
-
-import JSXSyntax from './components/JSXSyntax';
-
-import PropComponets from './components/PropComponets';
-
-import PropsClassComponent from './components/PropsClassComponent';
-
-import StatecComponent from './components/StatecComponent';
+import Hello from "./components/basicComponants/helloworld";
 
 import ButtonCounter from './components/ButtonCounter';
 
-import EventHandler from './components/EventHandler';
+import ListItems from './components/List/ListItems';
 
-import ParentComponent from './components/ParentComponent';
-
-import Conditioning from './components/conditioning';
-
-import ListItems from './components/ListItems';
-
-import Styling from './components/StylingCss';
-
-import InlineCss from './components/InlineCss';
+import Styling from './components/Styling/StylingCss';
 
 import Form from './components/forms/Form';
+
+import LifeCycleA from './components/LifeCycle/LifeCycleA';
+
+import Table from './components/Table/Table';
+
+// import ParentComp from './components/PureAndRegularComp/ParentComp';
+
+import RefDemo from './components/ref/RefDemo';
+
+import ComponentA from './components/Context/ComponentA';
+import { GetList } from './components/Http/GetList';
+import PostForm from './components/Http/PostForm';
+import ClassCounter from './components/Hooks/ClassCounter';
 
 function App() {
 
@@ -42,47 +32,10 @@ function App() {
     
     <div className="App">
       <Hello name= 'Anvesh'/>
-      {/* <Anvesh_NavBar />  */}
       <hr />
-
-      <Greet />
-      <hr />
-
-      <AlertComponent ></AlertComponent>
-      <hr />
-      
-      <JSXSyntax></JSXSyntax>
-      <hr />
-
-      <PropComponets name= 'Anvesh' passorfail = 'true' />
-      <PropComponets name= 'Bunny' passorfail ='false'/>
-      <hr />
-
-      <PropComponets name= 'children' passorfail ='false'>
-        <h1>this is propchildern</h1>
-      </PropComponets>
-      <hr />
-
-      <ClassComponent></ClassComponent>
-      <hr />
-      
-      <PropsClassComponent name= 'Anvesh' />
-      <hr />
-
-      <StatecComponent></StatecComponent>
-      <hr/>
 
       <ButtonCounter></ButtonCounter>
       <hr/>
-
-      <EventHandler></EventHandler>
-      <hr/>
-
-      <ParentComponent name="hbvbisrbvuiw"></ParentComponent>
-      <hr />
-
-      <Conditioning></Conditioning>
-      <hr />
 
       <ListItems></ListItems>
       <hr />
@@ -91,13 +44,34 @@ function App() {
       <Styling primary={true} ></Styling>
       <hr />
 
-      <InlineCss></InlineCss>
-      <hr />
-
       <Form></Form>
       <hr />
 
-      
+      <LifeCycleA></LifeCycleA>
+      <hr />
+
+      <Table></Table>
+      <hr/>
+
+
+      {/* <ParentComp></ParentComp> */}
+      <hr />
+
+      <RefDemo></RefDemo>
+      <hr />
+
+      <ComponentA></ComponentA>
+      <hr />
+
+      <GetList></GetList>
+      <hr />
+
+      <PostForm></PostForm>
+      <hr></hr>
+
+      <ClassCounter></ClassCounter>
+      <hr></hr>
+
       <br/><br/><br/><br/>
       
     </div>
