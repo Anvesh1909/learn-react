@@ -19,6 +19,11 @@ import ComponentA from './context/ComponentA'
 
 import Counter1 from './useReducer/Conter1'
 import Counter2 from './useReducer/Conter2'
+import DataFetching1 from './HttpReducers/DataFetching1'
+import DataFetching2 from './HttpReducers/DataFetching2'
+import ParentComponent from './CallBackHooks/ParentComponent'
+import Counter from './MemoHook.js/Counter'
+import FocusInput from './RefHook/FocusInput'
 
 export class ClassCounter extends Component {
 
@@ -85,6 +90,19 @@ export class ClassCounter extends Component {
         <Counter1></Counter1>
         <hr></hr>
         <Counter2></Counter2>
+
+        <hr></hr>
+        <DataFetching1></DataFetching1>
+        <hr></hr>
+        <DataFetching2></DataFetching2>
+
+        <hr></hr>
+        <ParentComponent></ParentComponent>
+        <hr></hr>
+        <Counter></Counter>
+
+        <hr></hr>
+        <FocusInput></FocusInput>
       </div>
     )
   }
